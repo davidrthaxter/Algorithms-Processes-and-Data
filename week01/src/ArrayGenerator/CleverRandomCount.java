@@ -29,9 +29,6 @@ public class CleverRandomCount extends RandomCount
     		temp = array()[index];
     		array()[index] = array()[randomInt];//swap two variables using a temp
     		array()[randomInt] = temp;
-    		
-    	}
-    	
+    	}	
     }//terminate function
-
 }// End of class SimpleRandomCount
