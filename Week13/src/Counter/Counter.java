@@ -173,6 +173,19 @@ public class Counter extends Thread
         return name;
     }
     
+    
+    
+    public void run(){
+    	startCount();
+    	while(!isFinished() )
+    	{
+    		stepCount();
+    	}
+    	
+    }
+    
+    
+    
     /**
      * Provide a facility for switching tracing on/off.  All counters share the same tracing
      * toggle.
