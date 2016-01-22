@@ -11,9 +11,7 @@ public class ThreadHashSet<T extends Thread> extends HashSet<T> implements Threa
 		}
 		for(Thread thread : this)
 		{
-			try{
 				thread.join();
-			}catch(InterruptedException e){};
 		}
 		
 	}
