@@ -41,4 +41,21 @@ public abstract class RandomCount extends SortedCount
     protected int randomIndex() {
         return random.nextInt(array().length);
     }
+    
+    /**
+     * 
+     * @return A long integer that is the amount of time
+     *  required to execute the randomise function 
+     * @author David Thaxter 
+     * @date October 2015
+     */
+    public long time()
+    {
+    	long startTime = System.currentTimeMillis();
+    	randomise();
+    	
+    	System.out.println(startTime);
+    	System.out.println(System.currentTimeMillis());
+		return (System.currentTimeMillis()- startTime);
+    }
 }
