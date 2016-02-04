@@ -24,7 +24,7 @@
 public class Generics {
 	
 	/*Genric function to swap two values in generic array*/
-	public static <T> void swap(T array[], int index1,int index2){
+	public <T> void swap(T array[], int index1,int index2){
 		T tempArray = array[index1];
 		array[index1] = array[index2];
 		array[index2] = tempArray;
@@ -43,6 +43,7 @@ public class Generics {
 	
 	
 	public static void main(String[] args) {
+		System.out.println("hello");
 
 	}
 }
